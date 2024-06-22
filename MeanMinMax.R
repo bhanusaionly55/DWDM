@@ -1,0 +1,11 @@
+library(readxl)
+diabetest1 <- read_excel("C:/Users/DELL/Documents/DWDM/dwdm.xlsx")
+A <- diabetest1$Age
+Mean <- mean(A)
+Minimum <- min(diabetest1$Age)
+Maximum <- max(diabetest1$Age)
+MinMax <- (A - Minimum) / (Maximum - Minimum)
+print(Mean)
+print(Minimum)
+print(Maximum)
+print(MinMax)
